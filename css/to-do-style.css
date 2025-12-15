@@ -72,8 +72,13 @@ img {
 
 .div1 span {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 5rem;
+    font-size: 2.75rem;
     line-height: 60%;
+    color: rgb(8, 203, 247);
+    position:absolute;
+    background-color:rgb(250, 235, 215, .8);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .div1 p {
@@ -95,6 +100,7 @@ img {
     grid-area: 1 / 4 / 3 / 6; 
     background-color: cornflowerblue;
 }
+
 
 .div3 {
      grid-area: 1 / 6 / 2 / 8; 

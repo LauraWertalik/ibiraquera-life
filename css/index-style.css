@@ -5,6 +5,7 @@ html {
     font-style: oblique;
     line-height: 1.25rem;
     color: rgb(210, 103, 167);
+    background-color:antiquewhite
 }
 
 h1 
@@ -59,7 +60,7 @@ nav {
     float:left;
     position: sticky;
     top: 0;
-    background-color: antiquewhite;
+    background-color: rgba(168, 231, 241, 0.8);
     width: 240px;
 }
 
@@ -98,7 +99,7 @@ nav a:hover,
 nav a:active {
     text-decoration: underline wavy rgba(221, 226, 180, 0.8) 2px;
     text-underline-offset: 6px;
-    color: rgba(229, 181, 102, 0.8);
+    color: rgb(149, 228, 192);
 }
 
 nav a:hover::before {
@@ -160,7 +161,7 @@ header {
 
 
 footer {
-    line-height: 70%;
+    line-height: 80%;
     font-weight: 300;
     /*position: relative;*/
 }
