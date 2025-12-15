@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel= "stylesheet" href="/css/form-style.css">
+</head>
+<body>
+    
+<div id="wrapper">
+
+ <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/to-do.html">Things to Do</a></li>
+            <li><a href="/form.html">Make a Reservation</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Reserve Your Room</h1>
+        <h2>Our reservation policies</h2>
+    </header>
+
+    <section class="policies">
+        <ul>
+            <li>Check-in time after 3:00pm</li>
+            <li>Check-out time by 11:00am or charges are incurred</li>
+            <li>Breakfast and afternoon tea/snacks included in cost</li>
+            <li>50% deposit required at booking</li>
+            <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+        </ul> 
+    </section>
+
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+            
+            <div>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name"
+                required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name"
+                required>
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="text" name="Email" id="Email" placeholder="Email"
+                required>
+            </div>
+
+            <div>
+                <label for="Phone">Phone</label>
+                <input type="tel" name="Phone" id="Phone"
+                required>
+            </div>
+
+            <div>
+                <label for="check-inDate">Check-in Date</label>
+                <input type="date" name="check-inDate" id="check-inDate"
+                required>
+            </div>
+
+            <div>
+                <label for="check-outDate">Check-out Date</label>
+                <input type="date" name="check-outDate" id="check-outDate"
+                required>
+            </div>
+
+            <div>
+                <label for="numberOfGuests">Number of Guests (maximum of 4)</label>
+                <input type="number" name="numberOfGuests" id="numberOfGuests" min="1" max="4"
+                required>
+            </div>
+
+            <div>
+                <label for="roomType">Room Type</label>
+                <select name-="roomType" id="roomType">
+                    <option value="Studio Mar">Studio Mar</option>
+                    <option value="Studio Jardim">Studio Jardim</option>
+                    <option value="Studio Terra">Studio Terra</option>
+                    <option value="Studio Lagoa">Studio Lagoa</option>
+                    <option value="Main House">Main House</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Lake View (additional cost)</div>
+                <Label for="view">Yes</Label>
+                <input type="radio" name="view" id="yes" value="yes"
+                required>
+
+                <label for="view">No</label>
+                <input type="radio" name="view" id="no" value="no"
+                required>
+            </div>
+
+            <div>
+                <label for="Notes">Notes</label>
+                <textarea name="Notes" id="Notes"></textarea>
+            </div>
+
+            <div>
+               I agree to the Terms and Conditions
+                <label for="Terms and Conditions"></label>
+                <input type="checkbox" name="agree" id="agree"
+                required>
+            </div>
+
+            <div>
+                <label for="Password"></label>
+                <input type="password">
+            </div>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+
+    </div>
+    <footer>Ibiraquera Life, 2025 &copy;</footer>
+    
+</body>
+</html>
